@@ -5,140 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" class="css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>My Portfolio</title>
 </head>
 
 <body>
     <!-- NAVIGATION BAR -->
-    <nav id="navbar">
-        <div id="logo">
-            <span>HAFSA SIDDIQUI</span>
-        </div>
-        <ul>
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#About-container">About Me</a></li>
-            <li class="item"><a href="#Project-section">Projects</a></li>
-            <li class="item"><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
+
 
     <!-- HOME -->
     <section id="home">
-        <h1 class="h-primary">Front-End Web Developer</h1>
-        <p>
-            Hi there! I'am HAFSA SIDDIQUI, A FRONT-END WEB DEVELOPER. My Expertise will ensure you to to stepahead from
-            your Competitors.
-        </p>
-        <p>
-            If you are a business seeking a web presence or an employer looking to hire, you can get in
-            touch with me here.
-        </p>
-        <button class="btn"><a href="https://github.com/hafsa906/My-Projects" target="_blank">I need a
-                website</a></button>
+        <nav id="navbar">
+            <div id="logo">
+                <span>HAFSA SIDDIQUI</span>
+            </div>
+            <ul>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#About-container">About Me</a></li>
+                <li class="item"><a href="#Project-section">Projects</a></li>
+                <li class="item"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="nav-content">
+            <h1 class="h-primary">Front-End Web Developer</h1>
+            <p>
+                Hi there! I'am HAFSA SIDDIQUI, A FRONT-END WEB DEVELOPER. My Expertise will ensure you to to stepahead from
+                your Competitors.
+            </p>
+            <p>
+                If you are a business seeking a web presence or an employer looking to hire, you can get in
+                touch with me here.
+            </p>
+            <a href="https://github.com/hafsa906/My-Projects" target="_blank">
+            <button class="btn">I need a
+                    website</button></a>
+        </div>
+
     </section>
 
-    <!-- ABOUT Me  -->
-    <section id="About-container">
-        <div id="About">
 
-            <!-- TEXT AREA  -->
-            <div id="div1">
-                <h1 class="h-primary">ABOUT ME</h1>
-                <img src="my picture.png" alt="My-Image">
-                <div class="into">
-                    <p>Hi there! Myself HAFSA SIDDIQUI and I'm a FRONT END WEB DEVELOPER.I start learning web
-                        development in
-                        2019 and still learning from CIRCLE-TECH KARO to get updated with my skills.
-                    </p>
-                    <p>
-                        I start coding by learning HTML,CSS and JAVASCRIPT. Furthermore, I want to learn different
-                        frameworks
-                        like JQUERRY, wordpress, etc.
-                    </p>
-                    <p class="intro">I personally belive the girls can code.I love to code and create interactive and
-                        attractive designs.My
-                        first priority is satisfaction of my clients.
-                    </p>
-                </div>
-            </div>
+    <!-- About section  -->
+    <section class="row about-sec m-0" id="About-container">
+        <h1 class="col-12 text-center py-3">About me</h1>
+        <div class="col-md-6 col-12 about-left">
+            <img src="project images/avater.jpg" class="about-img" alt="">
+        </div>
+        <div class="col-md-6 col-1 about-right">
+            <p>Hi there! Myself HAFSA SIDDIQUI and I'm a FRONT END WEB DEVELOPER.I start learning web
+                development in
+                2019 and still learning from CIRCLE-TECH KARO to get updated with my skills.
+            </p>
+            <p>
+                I start coding by learning HTML,CSS and JAVASCRIPT. Furthermore, I want to learn different
+                frameworks
+                like JQUERRY, wordpress, etc.
+            </p>
+            <p class="intro">I personally belive the girls can code.I love to code and create interactive and
+                attractive designs.My
+                first priority is satisfaction of my clients.
+            </p>
         </div>
     </section>
 
     <!-- PROJECTS  -->
     <section id="Project-section">
-        <h1 class="h-primary">MY PROJECTS</h1>
-        <div id="item">
-            <div class="div2 ">
-                <h2>CAKE STORE</h2>
+        <h1 class="h-primary my-pro">MY PROJECTS</h1>
+        <div id="item" class="row mx-0 pt-3 pb-5">
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3  ">
                 <img src="project images\cake.png" alt="" style="height: 25rem;width: 18rem;">
+                <h2>CAKE STORE</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/Cake%20store">here..</a>
                 </p>
             </div>
 
-            <div class="div2 ">
-                <h2>HOVER CARD</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3 ">
                 <img src="project images\card.png" alt="" style="height: 25rem;width: 25rem;">
+                <h2>HOVER CARD</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/cards"
-                        target="_blank">here..</a></p>
+                    target="_blank" >here..</a></p>
             </div>
 
-            <div class="div2">
-                <h2>INSTITUTE PAGE</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3">
                 <img src="project images\circle.png" alt="" style="height: 25rem;width: 18rem;">
+                <h2>INSTITUTE PAGE</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/project%202"
                         target="_blank">here..</a></p>
             </div>
-            <div class="div2 ">
-                <h2>ADMISSION FORM</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3 ">
                 <img src="project images\form.png" alt="" style="height: 25rem;width: 20rem;">
+                <h2>ADMISSION FORM</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/form%202"
                         target="_blank">here..</a></p>
             </div>
-            <div class="div2 ">
-                <h2>LOGIN FORM</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3 ">
                 <img src="project images\login.jpeg" alt="" style="height: 25rem;width: 20rem;">
+                <h2>LOGIN FORM</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/login"
                         target="_blank">here..</a></p>
             </div>
-            <div class="div2 ">
-                <h2>ONE NEON BUTTON</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3 ">
                 <img src="project images\neon btn1 (1).png" alt="" style="height: 25rem;width: 20rem;">
+                <h2>ONE NEON BUTTON</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/neon%20button"
                         target="_blank">here..</a></p>
             </div>
-            <div class="div2 ">
-                <h2>THREE NEON BUTTON</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3 ">
                 <img src="project images\neon btn2.jpeg" alt="" style="height: 25rem;width: 20rem;">
+                <h2>THREE NEON BUTTON</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/3%20neon%20button"
                         target="_blank">here..</a></p>
             </div>
-            <div class="div2 ">
-                <h2>STUDIO PAGE</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3 ">
                 <img src="project images\photography.png" alt="" style="height: 25rem;width: 20rem;">
+                <h2>STUDIO PAGE</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/profile"
                         target="_blank">here..</a></p>
             </div>
-            <div class="div2 ">
-                <h2>TRIBUTE PAGE</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3 ">
                 <img src="project images\tribute1.png" alt="" style="height: 25rem;width: 20rem;">
+                <h2>TRIBUTE PAGE</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/hs%20project"
                         target="_blank">here..</a></p>
             </div>
-            <div class="div2">
-                <h2>TYRE COMPANY</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3">
                 <img src="project images\tyre.png" alt="" style="height: 25rem;width: 20rem;">
+                <h2>TYRE COMPANY</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/HS%20tyres%203"
                         target="_blank">here..</a></p>
             </div>
-            <div class="div2">
-                <h2>SALT COMPANY</h2>
+            <div class="div2 col-lg-4 col-md-6 col-12 my-3">
                 <img src="project images\salt company.png" alt="" style="height: 25rem;width: 20rem;">
+                <h2>SALT COMPANY</h2>
                 <p>For code click <a href="https://github.com/hafsa906/My-Projects/tree/main/SALT%20COMPANY"
                         target="_blank">here..</a></p>
             </div>
+          
         </div>
 
     </section>
@@ -170,7 +177,6 @@
     </section>
 
     <!-- Footer Section  -->
-    <section>
         <footer>
             <div class="footer-content">
                 <h3>You Can Find Me At:</h3>
@@ -182,8 +188,12 @@
                     <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
                 </ul>
             </div>
-    </section>
+        </footer>
+
+
+
 
 </body>
-
+        <!-- bootstrap JS  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </html>
